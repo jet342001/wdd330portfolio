@@ -1,0 +1,40 @@
+h2 {
+	text-align: center;
+}
+
+ol {
+	padding: 0;
+	margin: 2rem;
+}
+
+li {
+	display: grid;
+	align-items: center;
+	padding: 0.5rem 0;
+	box-sizing: border-box;
+	max-width: 400px;
+}
+
+li::before {
+	content: "Entry";
+	font-size: 1.3rem;
+	font-weight: 700;
+	text-align: right;
+	width: 50px;
+	padding: 0.25rem;
+	font-variant-numeric: tabular-nums;
+	background-image: linear-gradient(to bottom, aquamarine, orangered);
+	background-attachment: fixed;
+} */
+
+li + li {
+	border-top: 1px solid rgba(100, 100, 100, 0.5);
+}
+
+li a {
+	text-decoration: none;
+	font-family: consolas, sans-serif;
+	font-size: 0.9rem;
+}
+
+@media
