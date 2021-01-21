@@ -1,7 +1,7 @@
 const links = [
 	{
 		label: "Week 01",
-		url: "week1/"
+		url: "week1/ninjaquiz.html"
 	},
 	{
 		label: "Week 02 Notes",
