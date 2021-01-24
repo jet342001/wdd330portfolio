@@ -20,7 +20,8 @@ body{
 }
 
 main{
-	background: $fourth-color;
+    background: $fourth-color;
+    overflow: hidden;
 }
 
 ol {
