@@ -1,43 +1,52 @@
-h2 {
-	padding: 1em 0 1em 0;
-	text-align: center;
-	background: purple;
+h2, footer {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-align: center;
+  background: #53131E;
+  color: white;
 }
 
-body{
-	margin: 0 auto;
-	background: lightcoral;
+body {
+  margin: 0 auto;
+  background: #5A464C;
 }
 
-main{
-	background: lightblue;
+main {
+  background: #FFFACC;
+  overflow: hidden
 }
 
 ol {
-	padding: 0;
-	margin: 2rem;
+  padding: 0;
+  margin: 2rem;
 }
 
 li {
-	display: grid;
-	align-items: center;
-	padding: 0.5rem 0;
-	box-sizing: border-box;
-	max-width: 100%;
+  display: grid;
+  align-items: center;
+  padding: 0.5rem 0;
+  box-sizing: border-box;
+  max-width: 100%;
 }
 
 li + li {
-	border-top: 1px solid rgba(100, 100, 100, 0.5);
+  border-top: 1px solid rgba(100, 100, 100, 0.5);
 }
 
 li a {
-	text-decoration: none;
-	font-family: consolas, sans-serif;
-	font-size: 0.9rem;
+  color: #53131E;
+  text-decoration: none;
+  font-family: consolas, sans-serif;
+  font-size: 0.9rem;
+}
+li a:hover {
+  color: orange;
 }
 
-@media (min-width: 700px){
-	body{
-		max-width: 80%;
-	}
+@media (min-width: 700px) {
+  body {
+    max-width: 80%;
+  }
 }
+
+/*# sourceMappingURL=css.css.map */

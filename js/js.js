@@ -4,11 +4,15 @@ const links = [
 		url: "week1/ninjaquiz.html"
 	},
 	{
-		label: "Week 02 Notes",
-		url: "week2/notes.html"
+		label: "Week 02 Drums",
+		url: "week2/index.html"
 	},
 	{
-		label: "Week 02 Application",
+		label: "Week 03 for stuff",
+		url: "week3/app.html"
+	},
+	{
+		label: "Week 04 Application",
 		url: "week1/app.html"
 	}
 ];
