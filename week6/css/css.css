@@ -96,6 +96,7 @@ img{
 }
 
 .remove-item{
+    background-image: url(../images/trash.svg);
     max-height: 100%;
 }
 

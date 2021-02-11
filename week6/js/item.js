@@ -5,7 +5,7 @@ export default class ToDoItem{
     }
 
     getId(){
-        return this._id
+        return this._id;
     }
 
     set(id) {
@@ -13,11 +13,11 @@ export default class ToDoItem{
     }
 
     getItem() {
-        return this._item
+        return this._item;
     }
 
     setItem(item) {
-        this._item =    
+        this._item = item;  
     }
 
 
