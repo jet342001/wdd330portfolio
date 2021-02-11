@@ -16,12 +16,12 @@ const links = [
 		url: "week4/index.html"
 	},
 	{
-		label: "Week 04 Notes",
-		url: "week1/app.html"
+		label: "Week 05 ok",
+		url: "https://codepen.io/jet342001/pen/ExgBOev"
 	},
 	{
-		label: "Week 05 ok",
-		url: "week1/app.html"
+		label: "Week 06 ok",
+		url: "week6/index.html"
 	}
 ];
 
