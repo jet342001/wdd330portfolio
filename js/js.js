@@ -20,7 +20,7 @@ const links = [
 		url: "https://codepen.io/jet342001/pen/ExgBOev"
 	},
 	{
-		label: "Week 06 ok",
+		label: "Week 06 ToDoApp",
 		url: "week6/index.html"
 	}
 ];
