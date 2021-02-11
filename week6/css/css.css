@@ -13,6 +13,10 @@ main{
     margin: 0 auto;
 }
 
+html{
+    background: black;
+}
+
 .top{
     background-image: url('../images/pexels-asad-photo-maldives-3601425.jpg') ;
     background-size: cover;
@@ -22,8 +26,11 @@ main{
     display: grid;
     padding: 2vh;
     margin-bottom: 0;
+    padding-bottom: 0;
 }
 .refresh{
+    background: red;
+    color: white;
     border-radius: 20px;
     border: none;
     grid-column: 8/11;
@@ -33,12 +40,12 @@ main{
     margin: 0;
     grid-row: 12;
     grid-column: 1/6;
-    font-size: 48px;
+    font-size: 40px;
 }
 .middle{
     overflow: hidden;
     margin-top: 0;
-    min-height: 40vh;
+    min-height: 52%;
     background: #D9D375;
 }
 
@@ -72,6 +79,11 @@ img{
     font-size: 3em;
 }
 
+.crossedOut{
+    text-decoration: line-through;
+    color: gray;
+}
+
 .todo-text{
     padding-left: .3em;
 }
@@ -96,7 +108,6 @@ img{
 }
 
 .remove-item{
-    background-image: url(../images/trash.svg);
     max-height: 100%;
 }
 

@@ -11,11 +11,11 @@
 <g id="Layer_2_1_">
 	<circle class="st0" cx="21" cy="21" r="20"/>
 	
-		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="306" y1="893" x2="306" y2="933" gradientTransform="matrix(1 0 0 1 -285 -892)">
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="306" y1="-849" x2="306" y2="-889" gradientTransform="matrix(1 0 0 -1 -285 -848)">
 		<stop  offset="0" style="stop-color:#5DF24F"/>
 		<stop  offset="1" style="stop-color:#2A9C06"/>
 	</linearGradient>
-	<path class="st1" d="M21,5c9.4,0,16,6.6,16,16c0,9.4-6.6,16-16,16c-9.4,0-16-6.6-16-16C5,11.6,11.6,5,21,5 M21,1C10,1,1,10,1,21
-		c0,11,9,20,20,20c11,0,20-9,20-20C41,10,32,1,21,1z"/>
+	<path class="st1" d="M21,5c9.4,0,16,6.6,16,16s-6.6,16-16,16S5,30.4,5,21S11.6,5,21,5 M21,1C10,1,1,10,1,21s9,20,20,20s20-9,20-20
+		S32,1,21,1z"/>
 </g>
 </svg>
