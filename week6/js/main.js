@@ -19,7 +19,7 @@ document.addEventListener('readystatechange', (event) => {
 
 const initApp = () => {
     //add listeners
-    const itemEntry = document.querySelector('.addTodo');
+    const itemEntryi = document.querySelector('.addTodo');
     itemEntry.addEventListener('click', (event) => {
         processSubmission();
     });
