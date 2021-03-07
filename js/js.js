@@ -26,6 +26,14 @@ const links = [
 	{
 		label: "Week 08 Team pokemon",
 		url: "week8/index.html"
+	},
+	{
+		label: "Week 09 Team project",
+		url: "week9/index.html"
+	},
+	{
+		label: "Week 09 proposal",
+		url: "week9-2/index.html"
 	}
 ];
 
