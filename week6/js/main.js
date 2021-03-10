@@ -39,7 +39,7 @@ const initApp = () => {
     loadListObject();
     //refresh the page
     refreshThePage();
-}
+};
 
 const loadListObject = () => {
     const storedList = localStorage.getItem('myToDoList');
@@ -56,7 +56,7 @@ const refreshThePage = () => {
     renderList();
     clearItemEntryField();
     setFocusOnItemEntry();
-}
+};
 
 const clearListDisplay = () => {
     const parentElement = document.querySelector('.list');
