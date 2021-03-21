@@ -1,17 +1,20 @@
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
     <meta charset="utf-8" />
         <title>Local Quakes</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="css/main.css" rel="stylesheet">
     </head>
 
     <body>
         <main>
             <h1>Quake List</h1>
+            <label>Radius:<input type="text" placeholder="100" id="radius"></label>
+            <button onClick="displayRadius()">Submit</button>
             <ul id="quakeList" ></ul>
         </main>
-    <script src="index.js"></script>
+
+        <script src="js/index.js" type="module"></script>
     </body>
 </html>
