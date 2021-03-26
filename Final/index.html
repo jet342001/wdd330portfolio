@@ -1,34 +1,83 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>order system</title>
+    <!--Font-->
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/1e5d579a01.js" crossorigin="anonymous"></script>
+    <!---->
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-center">
+            <span class="nav-icon">
+                <i class="fas fa-bars"></i>
+            </span>
 
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="descriptions" content="Order System">
-		<link rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-		<title>Todo App</title>
-        <link href="css/css.css" rel="stylesheet">
-        <script src='js/main.js' type="module"></script>
-	</head>
-	<body>
-		<main>
-            <div class=top>
-                <button class='refresh'>Remove all</button>
-                <p class='date'></p>
+            <img class="logo-img" src="./images/logo.svg" alt="store logo">
+            <div class="cart-btn">
+                <span class="nav-icon">
+                    <i class="fas fa-cart-plus"></i>
+                </span>
+                <div class="cart-items">0</div>
             </div>
-            <div class='middle todo'>
-                <ul id='list' class='list'>
+        </div>
+    </nav>
 
-                </ul>
-            </div>
-            <div class='bottom'>
-                <button class='addTodo'>Add</button>
-                <input type="text" class='input newItem' placeholder='new todo here'>
-            </div>
+    <header class="hero">
+        <div class="banner">
+            <h1 class="banner-title">Food order</h1>
+            <button class="banner-btn">Start order</button>
+        </div>
+    </header>
 
-		</main>
-		<footer>
-			To add or update list click or press the return key;
-		</footer>
-	</body>
+    <section class="products">
+        <div class="section-title">
+            <h2>Menu</h2>
+        </div>
+        <div class="products-center">
+            <article class="product">
+                <div class="img-container">
+                    <img src="images/Yellow-Curry.jpg" alt="yellow curry picture" class="product-img">
+                </div>
+                <button class="bag-btn" data-id="1">
+                    <i class="fas fa-shopping-cart"></i>
+                    add to cart
+                </button>
+            </article>
+        </div>
+    </section>
+    <div class="cart-overlay">
+        <div class="cart">
+            <span class="close-cart">
+                <i class="fas fa-window-close"></i>
+            </span>
+            <h2>your cart</h2>
+            <div class="cart-content">
+                <!-- cart item -->
+                <div class="cart-item">
+                    <img src="images/Fried-Rice.jpg">
+                    <div>
+                        <h4>Yellow Curry</h4>
+                        <h5>$9.00</h5>
+                    </div>
+                    <div>
+                        <i class="fas fa-chevron-up"></i>
+                            <p class="item-amount">1</p>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+                <!-- end cart -->
+            </div>
+            <div class="cart-footer">
+                <h3>your total : $ <span class="cart-total">0</span></h3>
+                <button class="clear-cart banner-btn">Buy now</button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>    
+</body>
 </html>

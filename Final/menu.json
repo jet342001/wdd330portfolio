@@ -1,0 +1,68 @@
+{
+  "menu": [
+    {
+      "sys": { "id": "1" },
+      "fields": {
+        "title": "Yellow Curry",
+        "price": 10.99,
+        "image": { "fields": { "file": { "url": "./images/Yellow-Curry.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "2" },
+      "fields": {
+        "title": "Green Curry",
+        "price": 12.99,
+        "image": { "fields": { "file": { "url": "./images/Green-Curry.JPEG" } } }
+      }
+    },
+    {
+      "sys": { "id": "3" },
+      "fields": {
+        "title": "Massaman Curry",
+        "price": 12.99,
+        "image": { "fields": { "file": { "url": "./images/Massaman-Curry.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "4" },
+      "fields": {
+        "title": "larb",
+        "price": 12.99,
+        "image": { "fields": { "file": { "url": "./images/Larb.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "5" },
+      "fields": {
+        "title": "Drunken Noodles",
+        "price": 10.99,
+        "image": { "fields": { "file": { "url": "./images/Drunken-Noodles.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "6" },
+      "fields": {
+        "title": "Nam Tok",
+        "price": 14.99,
+        "image": { "fields": { "file": { "url": "./images/Nam-Tok.png" } } }
+      }
+    },
+    {
+      "sys": { "id": "7" },
+      "fields": {
+        "title": "Pad See Ew",
+        "price": 15.99,
+        "image": { "fields": { "file": { "url": "./images/Pad-See-Ew.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "8" },
+      "fields": {
+        "title": "Fried Rice",
+        "price": 9.99,
+        "image": { "fields": { "file": { "url": "./images/Fried-Rice.jpg" } } }
+      }
+    }
+  ]
+}

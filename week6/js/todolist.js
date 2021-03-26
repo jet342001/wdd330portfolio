@@ -1,4 +1,4 @@
-export default class ToDoList {
+export default class shoppingCart {
     constructor () {
         this._list = [];
     }

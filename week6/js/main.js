@@ -1,4 +1,4 @@
-import ToDoList from './todolist.js';
+import shoppingCart from './shoppingCart.js';
 import ToDoItem from './toDoItem.js';
 
 const dayDate = document.querySelector('.date') ;
@@ -7,7 +7,7 @@ const today = new Date();
 
 dayDate.innerHTML = today.toLocaleDateString('en-US', options);
 
-const toDo = new ToDoList();
+const toDo = new shoppingCart();
 
 // launch app
 
@@ -42,7 +42,7 @@ const initApp = () => {
 };
 
 const loadListObject = () => {
-    const storedList = localStorage.getItem('myToDoList');
+    const storedList = localStorage.getItem('myshoppingCart');
     if(typeof storedList != 'string') return;
     const parsedList = JSON.parse(storedList);
     parsedList.forEach((itemObj) => {
@@ -180,5 +180,5 @@ const createnewItem = (itemId, itemText, complete = false) => {
 };
 
 const updatePersistantData = (listArray) => {
-    localStorage.setItem('myToDoList', JSON.stringify(listArray));
+    localStorage.setItem('myshoppingCart', JSON.stringify(listArray));
 };
