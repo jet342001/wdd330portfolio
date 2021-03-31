@@ -38,6 +38,10 @@ const links = [
 	{
 		label: "Week 10 earthquake",
 		url: "week10/index.html"
+	},
+	{
+		label: "final", 
+		url: "final/index.html"
 	}
 ];
 
