@@ -59,9 +59,73 @@
     {
       "sys": { "id": "8" },
       "fields": {
+        "title": "Pad Thai",
+        "price": 9.99,
+        "image": { "fields": { "file": { "url": "./images/Fried-Rice.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "9" },
+      "fields": {
         "title": "Fried Rice",
         "price": 9.99,
         "image": { "fields": { "file": { "url": "./images/Fried-Rice.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "10" },
+      "fields": {
+        "title": "Tom Kha Gai",
+        "price": 11.99,
+        "image": { "fields": { "file": { "url": "./images/Tom-Kha-Gai.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "11" },
+      "fields": {
+        "title": "Pad Krapow Moo",
+        "price": 13.99,
+        "image": { "fields": { "file": { "url": "./images/pad-krapow-moo.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "12" },
+      "fields": {
+        "title": "Pak Boong",
+        "price": 9.99,
+        "image": { "fields": { "file": { "url": "./images/pak-boong.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "13" },
+      "fields": {
+        "title": "Kai Jeow",
+        "price": 9.99,
+        "image": { "fields": { "file": { "url": "./images/kai-jeow.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "14" },
+      "fields": {
+        "title": "Gaeng Hanglay",
+        "price": 14.99,
+        "image": { "fields": { "file": { "url": "./images/gaeng-hanglay.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "15" },
+      "fields": {
+        "title": "Geang Keow Wan Gai",
+        "price": 12.99,
+        "image": { "fields": { "file": { "url": "./images/gean-keow-wan-gai.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "16" },
+      "fields": {
+        "title": "Mango With Stick Rice",
+        "price": 8.99,
+        "image": { "fields": { "file": { "url": "./images/mango-stickyrice.jpg" } } }
       }
     }
   ]

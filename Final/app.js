@@ -5,21 +5,23 @@ const cartWindow = document.querySelector('.cart');
 const cartOverlay = document.querySelector('.cart-overlay');
 const cartItems = document.querySelector('.cart-items');
 const cartTotal = document.querySelector('.cart-total');
-const cartcontent = document.querySelector('.cart-content');
-const productsApp = document.querySelector('.product-center');
-
+const cartContent = document.querySelector('.cart-content');
+const menuApp = document.querySelector('.menu-center');
 
 let cart = [];
+let myButtons = [];
+// Menu
+class Menu {
 
-// products
-class Products {
-    async getProducts() {
+
+    async getMenu() {
         try {
-            let result = await fetch("products.json");
+            let result = await fetch('menu.json');
             let data = await result.json();
-
-            let products = data.items;
-            products = products.map(item => {
+            console.log(data);
+            let menu = data.menu;
+            console.log(menu);
+            menu = menu.map(item => {
                 const {
                     title,
                     price
@@ -28,7 +30,7 @@ class Products {
                     id
                 } = item.sys;
                 const image = item.fields.image.fields.file.url;
-                console.log(test);
+                console.log(title,price,id,image);
                 return {
                     title,
                     price,
@@ -36,8 +38,8 @@ class Products {
                     image
                 };
             });
-
-            return products;
+            console.log(menu);
+            return menu;
         } catch (error) {
             console.log(error);
         }
@@ -46,34 +48,33 @@ class Products {
 
 
 class UI {
-    displayProducts(products) {
+    // displays individual menu items
+    displayMenu(menuItems) {
         let result = "";
-        products.forEach(product => {
+        menuItems.forEach(item => {
             result += `
-     <!-- single product -->
-          <article class="product">
+          <article class="menu">
             <div class="img-container">
               <img
-                src=${product.image}
-                alt="product"
-                class="product-img"
+                src=${item.image}
+                alt="food image"
+                class="menu-img"
               />
-              <button class="bag-btn" data-id=${product.id}>
+              <button class="bag-btn" data-id=${item.id}>
                 <i class="fas fa-shopping-cart"></i>
                 add to bag
               </button>
             </div>
-            <h3>${product.title}</h3>
-            <h4>$${product.price}</h4>
+            <h3>${item.title}</h3>
+            <h4>$${item.price}</h4>
           </article>
-          <!-- end of single product -->
      `;
         });
-        productsApp.innerHTML = result;
+        menuApp.innerHTML = result;
     }
     getBagButtons() {
         let buttons = [...document.querySelectorAll(".bag-btn")];
-        buttonsDOM = buttons;
+        myButtons = buttons;
         buttons.forEach(button => {
             let id = button.dataset.id;
             let inCart = cart.find(item => item.id === id);
@@ -88,7 +89,7 @@ class UI {
                 event.target.disabled = true;
                 // add to cart
                 let cartItem = {
-                    ...Storage.getProduct(id),
+                    ...Storage.getMenu(id),
                     amount: 1
                 };
                 cart = [...cart, cartItem];
@@ -114,16 +115,13 @@ class UI {
     addCartItem(item) {
         const div = document.createElement("div");
         div.classList.add("cart-item");
-        div.innerHTML = `<!-- cart item -->
-              <!-- item image -->
-              <img src=${item.image} alt="product" />
-              <!-- item info -->
+        div.innerHTML = `
+              <img src=${item.image} alt="menu-image" />
               <div>
                 <h4>${item.title}</h4>
                 <h5>$${item.price}</h5>
                 <span class="remove-item" data-id=${item.id}>remove</span>
               </div>
-              <!-- item functionality -->
               <div>
                   <i class="fas fa-chevron-up" data-id=${item.id}></i>
                 <p class="item-amount">
@@ -131,7 +129,6 @@ class UI {
                 </p>
                   <i class="fas fa-chevron-down" data-id=${item.id}></i>
               </div>
-            <!-- cart item -->
       `;
         cartContent.appendChild(div);
     }
@@ -206,17 +203,18 @@ class UI {
         button.innerHTML = `<i class="fas fa-shopping-cart"></i>add to bag`;
     }
     getSingleButton(id) {
-        return buttonsDOM.find(button => button.dataset.id === id);
+        return myButtons.find(button => button.dataset.id === id);
     }
 }
 
+//checks local storage
 class Storage {
-    static saveProducts(products) {
-        localStorage.setItem("products", JSON.stringify(products));
+    static saveMenu(menu) {
+        localStorage.setItem("menu", JSON.stringify(menu));
     }
-    static getProduct(id) {
-        let products = JSON.parse(localStorage.getItem("products"));
-        return products.find(product => product.id === id);
+    static getMenu(id) {
+        let menu = JSON.parse(localStorage.getItem("menu"));
+        return menu.find(menu => menu.id === id);
     }
     static saveCart(cart) {
         localStorage.setItem("cart", JSON.stringify(cart));
@@ -228,21 +226,30 @@ class Storage {
     }
 }
 
+// main starts app once content loads
 document.addEventListener("DOMContentLoaded", () => {
     const ui = new UI();
-    const products = new Products();
+    const menu = new Menu();
     ui.setupAPP();
 
 
-    // get all products
-    products
-        .getProducts()
-        .then(products => {
-            ui.displayProducts(products);
-            Storage.saveProducts(products);
+    // get all menu itesm
+    menu
+        .getMenu()
+        .then(menu => {
+            //Populate order
+            ui.displayMenu(menu);
+            //check for stored items
+            Storage.saveMenu(menu);
         })
         .then(() => {
+            //main app
             ui.getBagButtons();
             ui.cartLogic();
         });
 });
+
+//simple add on to remove the main banner to start order
+function startOrder() {
+    document.querySelector('.hero').classList.toggle('start-order');
+}

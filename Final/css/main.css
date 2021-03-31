@@ -19,7 +19,6 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-/* --------------- Navbar ---------------- */
 .navbar {
   position: sticky;
   top: 0;
@@ -61,7 +60,7 @@ body {
   border-radius: 30%;
   color: var(--mainWhite);
 }
-/* --------------- End of Navbar ---------------- */
+
 
 .hero {
   min-height: calc(100vh - 60px);
@@ -69,6 +68,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.start-order {
+  display: none;
 }
 .banner {
   text-align: center;
@@ -98,9 +100,7 @@ body {
   color: var(--primaryColor);
 }
 
-/* --------------- Products ---------------- */
-
-.products {
+.menu-section {
   padding: 4rem 0;
 }
 .section-title h2 {
@@ -110,7 +110,7 @@ body {
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
 }
-.products-center {
+.menu-center {
   width: 90vw;
   margin: 0 auto;
   max-width: 1170px;
@@ -123,6 +123,7 @@ body {
   position: relative;
   overflow: hidden;
 }
+
 .bag-btn {
   position: absolute;
   top: 70%;
@@ -146,17 +147,18 @@ body {
 .img-container:hover .bag-btn {
   transform: translateX(0);
 }
-.product-img {
+.menu-img {
   display: block;
   width: 100%;
-  min-height: 12rem;
+  min-height: 24rem;
+  max-height: 24rem;
   transition: var(--mainTransition);
 }
-.img-container:hover .product-img {
+.img-container:hover .menu-img {
   opacity: 0.5;
 }
 
-.product h3 {
+.menu h3 {
   text-transform: capitalize;
   font-size: 1.1rem;
   margin-top: 1rem;
@@ -164,15 +166,13 @@ body {
   text-align: center;
 }
 
-.product h4 {
+.menu h4 {
   margin-top: 0.7rem;
   letter-spacing: var(--mainSpacing);
   color: var(--primaryColor);
   text-align: center;
 }
 
-/* ---------------End of Products ---------------- */
-/* --------------- Cart ---------------- */
 .cart-overlay {
   position: fixed;
   top: 0;
@@ -220,7 +220,7 @@ body {
   letter-spacing: var(--mainSpacing);
   margin-bottom: 2rem;
 }
-/*---------- Cart Item -------------------- */
+
 .cart-item {
   display: grid;
   align-items: center;
@@ -253,7 +253,6 @@ body {
   color: var(--primaryColor);
   cursor: pointer;
 }
-/*---------- End of Cart Item -------------------- */
 
 .cart-footer {
   margin-top: 2rem;
@@ -265,4 +264,3 @@ body {
   margin-bottom: 1rem;
 }
 
-/* --------------- End of Cart ---------------- */

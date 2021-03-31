@@ -5,10 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>order system</title>
-    <!--Font-->
     <link rel="stylesheet" href="css/main.css">
     <script src="https://kit.fontawesome.com/1e5d579a01.js" crossorigin="anonymous"></script>
-    <!---->
 </head>
 <body>
     <nav class="navbar">
@@ -30,18 +28,18 @@
     <header class="hero">
         <div class="banner">
             <h1 class="banner-title">Food order</h1>
-            <button class="banner-btn">Start order</button>
+            <button class="banner-btn" onclick='startOrder()'>Start order</button>
         </div>
     </header>
 
-    <section class="products">
+    <section class="menu-secion">
         <div class="section-title">
             <h2>Menu</h2>
         </div>
-        <div class="products-center">
-            <article class="product">
+        <div class="menu-center">
+            <article class="menu-item">
                 <div class="img-container">
-                    <img src="images/Yellow-Curry.jpg" alt="yellow curry picture" class="product-img">
+                    <img src="images/Yellow-Curry.jpg" alt="yellow curry picture" class="menu-img">
                 </div>
                 <button class="bag-btn" data-id="1">
                     <i class="fas fa-shopping-cart"></i>
@@ -57,20 +55,6 @@
             </span>
             <h2>your cart</h2>
             <div class="cart-content">
-                <!-- cart item -->
-                <div class="cart-item">
-                    <img src="images/Fried-Rice.jpg">
-                    <div>
-                        <h4>Yellow Curry</h4>
-                        <h5>$9.00</h5>
-                    </div>
-                    <div>
-                        <i class="fas fa-chevron-up"></i>
-                            <p class="item-amount">1</p>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                </div>
-                <!-- end cart -->
             </div>
             <div class="cart-footer">
                 <h3>your total : $ <span class="cart-total">0</span></h3>
