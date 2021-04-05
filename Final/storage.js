@@ -1,4 +1,5 @@
 export default class Storage {
+    
     static saveMenu(menu) {
         localStorage.setItem("menu", JSON.stringify(menu));
     }

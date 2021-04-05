@@ -2,7 +2,6 @@ import Storage from './storage.js';
 
 export default class Menu {
 
-
     async getMenu() {
         try {
             let result = await fetch('menu.json');

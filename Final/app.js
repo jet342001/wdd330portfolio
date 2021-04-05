@@ -2,11 +2,6 @@ import Menu from './menu.js';
 import Storage from './storage.js';
 import UI from './ui.js';
 
-
-
-
-
-
 // main starts app once content loads
 document.addEventListener("DOMContentLoaded", () => {
     const ui = new UI();
