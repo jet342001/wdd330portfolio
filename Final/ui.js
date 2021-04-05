@@ -61,7 +61,6 @@ export default class UI {
                 };
                 cart = [...cart, cartItem];
                 Storage.saveCart(cart);
-                // add to DOM
                 this.setCartValues(cart);
                 this.addCartItem(cartItem);
                 this.showCart();
